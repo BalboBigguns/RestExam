@@ -21,8 +21,7 @@ mongoose.connect(
         const weatherService = require('./weatherService');
         const managedCities = ['lodz', 'warszawa', 'wroclaw', 'szczecin', 'rzeszow', 'krakow', 'gdansk', 'suwalki'];
         // Collects data every hour
-        // weatherService.start(managedCities, 1000*60*60);
-        weatherService.start(managedCities, 10000);
+        weatherService.start(managedCities, 1000*60*60);
         // Start
         app.listen(8080);
     })
